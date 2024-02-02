@@ -15,6 +15,7 @@ public class TesterController : MonoBehaviour
     [SerializeField] private float _speedZ;
     [SerializeField] GameObject _testerCamera;
     [SerializeField] private Transform _cameraFollow;
+    [SerializeField] private GameObject _weapon;
 
     private void LateUpdate()
     {
@@ -44,6 +45,7 @@ public class TesterController : MonoBehaviour
 
     private void MoveUpdate()
     {
+        _weapon.transform.rotation = _testerCamera.transform.rotation;
         _testerCamera.transform.position = _cameraFollow.position;
         Vector3 rot = _testerCamera.transform.eulerAngles;
         rot.x = 0;
