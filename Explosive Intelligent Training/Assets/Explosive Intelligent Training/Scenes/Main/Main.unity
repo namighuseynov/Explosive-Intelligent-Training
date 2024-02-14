@@ -411,6 +411,7 @@ MonoBehaviour:
   _speedZ: 10
   _testerCamera: {fileID: 803397564}
   _cameraFollow: {fileID: 1494649375}
+  _weapon: {fileID: 30885962}
 --- !u!136 &320914113
 CapsuleCollider:
   m_ObjectHideFlags: 0
